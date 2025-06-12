@@ -1,0 +1,57 @@
+dden files
+.*
+!.gitignore
+
+# vim files
+*~
+
+# outputs
+*.txt
+*.csv
+*.p
+*.ods
+*.pdf
+*.png
+*.svg
+*.xlsx
+*.tsv
+*.html
+
+# python
+venv/
+*.egg-info/*
+__pycache__
+
+# tag files
+tags
+
+# ignore tex and [R|r]nw file
+# all latex files
+*.aux
+*.bbl
+*.bib
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
+*.toc
+*.blg
+*.out
+*.xdv
+!.tex
+!.[R|r]nw
+
+# potentially large files
+*.tar
+*.gz
+*.p
+*.Rdata
+
+# directories
+cache/
+data/
+results/
+job*/
+PCA_temp/
+docs/
+

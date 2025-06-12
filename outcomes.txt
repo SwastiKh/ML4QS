@@ -1,0 +1,3 @@
+	path	effect_type	effect_allele	other_allele	effect_size	standard_error	pvalue	chr_name	start_pos	end_pos	var_id	chrpos	chrpos_spec	start_anchor	end_anchor	pvalue_logged	sep	compression	group	drop	notes	phenotype	unit	no_cases	samplesize	url
+brugada	/gpfs/work2/0/aus20644/data/gwas_data/brugada_35210625/b38/data_files/brugada_35210625.b38.gnorm.gz	log_or															\t		brugada			brugada	logOR	2820	10001	https://www.nature.com/articles/s41588-021-01007-6
+qrs_duration	/gpfs/work2/0/aus20644/data/gwas_data/vansetten_ecg_traits_30679814/b38/data_files/qrs_duration_30679814.b38.gnorm.gz	beta															\t	gzip				QRS	SD	0	30000	https://pubmed.ncbi.nlm.nih.gov/30670814/

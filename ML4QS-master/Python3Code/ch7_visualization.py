@@ -155,10 +155,10 @@ ax.set_ylim([0,1])
 ax.set_xlabel('$X_{1}$')
 ax.set_ylabel('$X_{2}$')
 
-df1 = pd.DataFrame(columns=list('XY'))
+df1 = pd.DataFrame(columns=list('XY'), dtype=float)
 df1['X'] = x_1
 df1['Y'] = y_1
-df2 = pd.DataFrame(columns=list('XY'))
+df2 = pd.DataFrame(columns=list('XY'), dtype=float)
 df2['X'] = x_2
 df2['Y'] = y_2
 sigma = 1

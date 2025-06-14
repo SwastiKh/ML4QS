@@ -26,7 +26,7 @@ np.random.seed(0)
 
 # Figure 6.1
 
-df = pd.DataFrame(columns=['x', 'y'])
+df = pd.DataFrame(columns=['x', 'y'], dtype=float)
 x = np.random.normal(0, 0.5, 100)
 df['x'] = x
 y = 2.5 * x + 3

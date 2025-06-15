@@ -1,0 +1,225 @@
+{
+  "processing_timestamp": "2025-06-15 13:11:07",
+  "total_datasets_processed": 5,
+  "total_datasets_failed": 15,
+  "exercises": [
+    "burpees",
+    "crunches",
+    "jumping_jacks",
+    "plank",
+    "squats"
+  ],
+  "participants": [
+    "akshaye",
+    "swasti"
+  ],
+  "combined_timeseries_shape": [
+    27113,
+    17
+  ],
+  "combined_features_shape": [
+    295,
+    152
+  ],
+  "window_parameters": {
+    "window_size_seconds": 1.0,
+    "overlap_ratio": 0.5
+  },
+  "output_files": {
+    "combined_timeseries": "processed_training_data/combined/all_exercises_timeseries.csv",
+    "combined_features": "processed_training_data/combined/all_exercises_features.csv"
+  },
+  "processing_details": {
+    "successful": [
+      {
+        "exercise": "burpees",
+        "participant": "akshaye",
+        "dataset": "burpees1",
+        "timeseries_shape": [
+          3013,
+          17
+        ],
+        "features_shape": [
+          59,
+          152
+        ],
+        "num_windows": 59,
+        "duration": 29.988773829967002
+      },
+      {
+        "exercise": "crunches",
+        "participant": "akshaye",
+        "dataset": "crunches1",
+        "timeseries_shape": [
+          6026,
+          17
+        ],
+        "features_shape": [
+          59,
+          152
+        ],
+        "num_windows": 59,
+        "duration": 30.00408662504
+      },
+      {
+        "exercise": "jumping_jacks",
+        "participant": "akshaye",
+        "dataset": "jumping_jacks_set1",
+        "timeseries_shape": [
+          6026,
+          17
+        ],
+        "features_shape": [
+          59,
+          152
+        ],
+        "num_windows": 59,
+        "duration": 30.0120422950305
+      },
+      {
+        "exercise": "plank",
+        "participant": "akshaye",
+        "dataset": "plank1",
+        "timeseries_shape": [
+          6024,
+          17
+        ],
+        "features_shape": [
+          59,
+          152
+        ],
+        "num_windows": 59,
+        "duration": 29.99897412664
+      },
+      {
+        "exercise": "squats",
+        "participant": "akshaye",
+        "dataset": "squats1",
+        "timeseries_shape": [
+          6024,
+          17
+        ],
+        "features_shape": [
+          59,
+          152
+        ],
+        "num_windows": 59,
+        "duration": 29.998672001649
+      }
+    ],
+    "failed": [
+      {
+        "exercise": "burpees",
+        "participant": "swasti",
+        "dataset": "burpees3",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "burpees",
+        "participant": "swasti",
+        "dataset": "burpees2",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "burpees",
+        "participant": "swasti",
+        "dataset": "burpees1",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "crunches",
+        "participant": "swasti",
+        "dataset": "crunches1",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "crunches",
+        "participant": "swasti",
+        "dataset": "crunches2",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "crunches",
+        "participant": "swasti",
+        "dataset": "crunches3",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "jumping_jacks",
+        "participant": "swasti",
+        "dataset": "jumping_jacks3",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "jumping_jacks",
+        "participant": "swasti",
+        "dataset": "jumping_jacks2",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "jumping_jacks",
+        "participant": "swasti",
+        "dataset": "jumping_jacks1",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "plank",
+        "participant": "swasti",
+        "dataset": "plank1",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "plank",
+        "participant": "swasti",
+        "dataset": "plank2",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "plank",
+        "participant": "swasti",
+        "dataset": "plank3",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "squats",
+        "participant": "swasti",
+        "dataset": "squats1",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "squats",
+        "participant": "swasti",
+        "dataset": "squats2",
+        "reason": "Data loading failed"
+      },
+      {
+        "exercise": "squats",
+        "participant": "swasti",
+        "dataset": "squats3",
+        "reason": "Data loading failed"
+      }
+    ],
+    "summary": {
+      "burpees": {
+        "timeseries_datasets": 1,
+        "feature_datasets": 1
+      },
+      "crunches": {
+        "timeseries_datasets": 1,
+        "feature_datasets": 1
+      },
+      "jumping_jacks": {
+        "timeseries_datasets": 1,
+        "feature_datasets": 1
+      },
+      "plank": {
+        "timeseries_datasets": 1,
+        "feature_datasets": 1
+      },
+      "squats": {
+        "timeseries_datasets": 1,
+        "feature_datasets": 1
+      }
+    }
+  }
+}

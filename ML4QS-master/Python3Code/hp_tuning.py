@@ -13,7 +13,7 @@ pbounds = {"n_estimators" : (10, 200), "max_depth" : (1, 20)}
 def train_rf_wrapper(n_estimators, max_depth):
     n_estimators = int(round(n_estimators))
     max_depth = int(round(max_depth))
-    accuracy = random_forest_classification(n_estimators, max_depth)
+    accuracy = random_forest_classification(X_train, y_train, X_test, y_test, n_estimators, max_depth)
     return accuracy
 
 
@@ -57,7 +57,7 @@ print(optimizer1.max)
 pbounds = {"n_neighbors" : (1, 20)}
 def train_knn_wrapper(n_neighbors):
     n_neighbors = int(round(n_neighbors))
-    accuracy = knn_classification(n_neighbors)
+    accuracy = knn_classification(X_train, y_train, X_test, y_test, n_neighbors)
     return accuracy
 # create instance of optimizer
 optimizer2 = BayesianOptimization(

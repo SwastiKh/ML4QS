@@ -1,0 +1,41 @@
+# A job array config file for extracting the top hits from the interval data
+[qsub]
+# The general parameters for the job. The script has defaults for many of these
+step=1
+# batch=100
+mem=20G
+# shell=/bin/bash
+time=01:00:00
+nodes=1
+cpus_per_task=16
+tmp_dir=/gpfs/work2/0/aus20644/project/ksharma/brugada/cis_MR/gudjonsson/tmp/
+
+[logs]
+# The root for all the job/run logs. If it does not exist it will be created
+log_dir=/gpfs/work2/0/aus20644/project/ksharma/brugada/cis_MR/gudjonsson/job/
+
+[job_array]
+# The location of the job array file, I have given a full path
+# so there are no issues, relative paths are ok, but remember they will
+# be relative to where the script is run not where the config file is
+# also ~/ can be used
+ja_file=/gpfs/work2/0/aus20644/project/ksharma/brugada/cis_MR/gudjonsson/jaf.txt
+# The location of the task script that runs the job. Task scripts should
+# accept 4 arguments.
+# 1. the job array file
+# 2. the location of the tmp folder i.e. scratch
+# 3. the step size for the job array
+# 4. the job ID i.e. SGE_TASK_ID
+task_script=/gpfs/work2/0/aus20644/project/ksharma/brugada/cis_MR/gudjonsson/submission.sh
+# A comma separated list of column names in the jobarray files
+# where the input files are located and the output files are located
+# only list them if you want the presence of the input files/output
+# files checked by the submission script. if the column name contains
+# a comma, protenct with quotes ""
+infiles=infile
+outfiles=outfile
+
+[script]
+# Arguments to the script, at the moment it is just verbose that can be
+# true or false
+verbose=true
